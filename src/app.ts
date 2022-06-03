@@ -2,7 +2,7 @@ import express, { Request, Response } from "express";
 import dotenv from "dotenv";
 import pool from ".././db";
 dotenv.config();
-const port = process.env.My_port || 5005;
+const port = process.env.PG_PORT || 5000;
 
 const app = express();
 import { getData, postData, getDataById } from "../controllers/index";
